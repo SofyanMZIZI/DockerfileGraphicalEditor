@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/com.s5.mde.dockerfiledsl/src-gen" creationIcons="false"
+    editDirectory="/com.s5.mde.dockerfiledsl.edit/src-gen" editorDirectory="/com.s5.mde.dockerfiledsl.editor/src-gen"
+    modelPluginID="com.s5.mde.dockerfiledsl" modelName="Dockerfiledsl" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>dockerfiledsl.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Dockerfiledsl" basePackage="com.s5.mde" disposableProviderFactory="true"
+      ecorePackage="dockerfiledsl.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dockerfiledsl.ecore#//Signals">
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGHUP"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGINT"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGQUIT"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGILL"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGTRAP"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGABRT"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGBUS"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGFPE"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGKILL"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGUSR1"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGSEGV"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGUSR2"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGPIPE"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGALRM"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGTERM"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGSTKFLT"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGCHLD"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGCONT"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGSTOP"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGTSTP"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGTTIN"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGTTOU"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGURG"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGXCPU"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGXFSZ"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGVTALRM"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGPROF"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGWINCH"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGIO"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGPWR"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGSYS"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGRTMIN"/>
+      <genEnumLiterals ecoreEnumLiteral="dockerfiledsl.ecore#//Signals/SIGRTMAX"/>
+    </genEnums>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//HEALTHCHECK">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//HEALTHCHECK/option"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//HEALTHCHECK/cmd"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//ADD">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ADD/src"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ADD/dest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ADD/checksum"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ADD/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ADD/group"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//SHELL">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//SHELL/cmd"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//SchellForm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//SchellForm/executable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//SchellForm/cmd"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//StartPeriod">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//StartPeriod/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//FROM">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//FROM/platfom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//FROM/image"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//FROM/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dockerfiledsl.ecore#//Instruction"/>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//CMD">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//CMD/command"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//COPY">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//COPY/src"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//COPY/dest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//COPY/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//COPY/group"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Port/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//WORKDIR">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//WORKDIR/path"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//STOPSIGNAL">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//STOPSIGNAL/signal"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Data"/>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//KeyValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//KeyValue/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//KeyValue/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//USER">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//USER/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//USER/group"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Src"/>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Path">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Path/str"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dockerfiledsl.ecore#//Command"/>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//ENV">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ENV/keyvalues"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Signal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Signal/sig"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//ONBUILD">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ONBUILD/instructions"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Retries">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Retries/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Value">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Value/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Checksum">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Checksum/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//VOLUME">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//VOLUME/data"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Protocol">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Protocol/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//ExecForm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//ExecForm/args"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//LABEL">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//LABEL/keyvalues"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Name">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Name/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Group">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Group/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//EXPOSE">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//EXPOSE/port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//EXPOSE/protocol"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//RUN">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//RUN/command"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//ENTRYPOINT">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ENTRYPOINT/command"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Key">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Key/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Image/str"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Image/tag"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//ARG">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ARG/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//ARG/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Platform">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Platform/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Dest"/>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Interval">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Interval/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Timeout">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Timeout/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Dockerfile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Dockerfile/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Dockerfile/instructions"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Option">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Option/interval"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Option/timeout"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Option/startperiod"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Option/retries"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Tag">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Tag/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Usr">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dockerfiledsl.ecore#//Usr/str"/>
+    </genClasses>
+    <genClasses ecoreClass="dockerfiledsl.ecore#//Main">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dockerfiledsl.ecore#//Main/dockerfile"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

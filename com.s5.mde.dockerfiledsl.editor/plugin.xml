@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated dockerfiledsl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.s5.mde.dockerfiledsl.presentation.DockerfiledslModelWizardID"
+            name="%_UI_DockerfiledslModelWizard_label"
+            class="com.s5.mde.dockerfiledsl.presentation.DockerfiledslModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DockerfiledslModelFile.gif">
+         <description>%_UI_DockerfiledslModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated dockerfiledsl -->
+      <editor
+            id="com.s5.mde.dockerfiledsl.presentation.DockerfiledslEditorID"
+            name="%_UI_DockerfiledslEditor_label"
+            icon="icons/full/obj16/DockerfiledslModelFile.gif"
+            extensions="dockerfiledsl"
+            class="com.s5.mde.dockerfiledsl.presentation.DockerfiledslEditor"
+            contributorClass="com.s5.mde.dockerfiledsl.presentation.DockerfiledslActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
